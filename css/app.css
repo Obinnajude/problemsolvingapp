@@ -1,0 +1,111 @@
+*{box-sizing:border-box;}
+body{
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login{
+    background-image: url(../img/images2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.head h1{
+    color: darkblue;
+    padding: 20px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+fieldset{
+    background-color: rgb(173, 216, 230,0.7);
+    box-shadow: 10px 10px 30px black;
+    padding: 10px;
+    margin-top:2%;
+    width:70%;
+    font-size: 20px;
+    border-radius: 20px;
+}
+legend{
+background-color: darkblue;
+border-radius: 30%;
+color: white;
+text-align: center;
+font-weight: bolder;
+        }
+label{
+    color: black;
+    padding: 10px;
+}
+
+#gender{
+    margin: 0px 0px 0px 27px;
+    width:40%;
+}
+
+#age{
+    margin: 0px 0px 0px 60px;
+    width:40%; 
+}
+#name{
+    width:40%;
+}
+.btn{
+    font-size: 20px;
+    margin-left:10%; 
+    margin-top:10px;
+    z-index: 2;
+}
+
+#nameerror, #ageerror,#gendererror{
+    color:red;
+    font-style: italic;
+}
+ 
+@media(max-width="780px"){
+    
+}
+
+#instruction{
+    display: none;
+    text-align: center;
+}
+#instruction h2{
+    text-decoration: underline;
+    font-weight: bolder;
+    color: darkblue;
+}
+#instruction h3{
+    color: red;
+    font-weight: bolder;
+}
+#instruction p{
+    font-size: 30px;
+}
+#start{
+    font-size: 30px;
+    font-weight:bolder;
+    padding:20px;
+}
+#quest{
+    display:none;
+    font-size: 30px;
+}
+#quest input[type="radio"]{
+    width: 30px;
+    size: 30px;
+    font-weight:bolder; 
+    cursor: pointer;
+}
+#btnst{
+    font-weight: bolder;
+}
+ #activityinst{
+     margin-bottom: 20px;
+     font-weight: bold;
+ }
+ #question{
+     margin: 20px 0px 20px 0px;
+     color: red;
+     font-weight: bolder;
+ }

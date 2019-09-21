@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+
+    <main>
+        <article class="container">
+            <div class="row head">
+              <h1 id='myfocus'>Problem Solving Strategy Test (PSST)</h1>
+            </div>
+
+        </article>
+      <section class="container login" id="log">
+          <fieldset class="row">
+              <legend>LogIn Here</legend>
+          <form action="" method="post" class="col-md-12">
+            <label for="name">Full Name:</label>
+            <input type="text" name="" id="name" placeholder="Enter Full Name eg. Obinna Mike" required> <span id="nameerror"></span> <br>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="choose Your Gender">Choose Your Gender</option>
+                <option value="Male">Male</option>
+                <option value="female">Female</option>
+            </select> <span id="gendererror"></span><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" placeholder="Age must be number eg:10" required> <span id="ageerror"></span><br>
+            <input type="button" value="LogIn To Test Yourself" class="btn btn-primary" id="loginbutton" onclick="collectLogInput()">
+
+          </form>
+        </fieldset>
+      </section>
+      <section class="container" id="instruction">
+         <div class="row">
+             <h2>INSTRUCTION</h2>
+             <p> The PSST exam is to test your problem solving strategy capability. <br>
+                 Simply follow the instruction on each stages activities of the 
+                 challenge and do as required  <br> Relax Yourself, Your Time starts counting in the background 
+                 the moment you click Start Exam button below <br> Note: you will be taken to the Next activity the moment your time for a particular activity is up. <br> Good Luck!!</p> 
+             <h3> Click on the Button Below To Start the Exam.</h3>
+              <h4><button id="start" onclick="startStageOneActivityOne()" class="btn2 btn-primary">Start Exam</button></h4>
+         </div>
+      </section>
+
+    
+       <article class="container" id="quest">
+           
+           <div class="row">
+               <p id='activity'></p>
+               <p id='activityinst'></p>
+               <div id="question"></div>
+               <div id="stageFive"></div>
+               <div id= 'word'></div>
+           
+           <div id="option"></div>
+        </div>
+       </article>
+       <p style=" margin-top:100px;text-align:center; color:#0000ff">Powered by YouGain Computers. Coded by Obinna Jude 08039648575</p>
+
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+</body>
+</html>
